@@ -60,7 +60,7 @@
                             <TableColumn fx:id="titleColumn" prefWidth="240.0" text="Title" />
                             <TableColumn fx:id="authorColumn" prefWidth="140.0" text="Author" />
                               <TableColumn fx:id="ISBNColumn" prefWidth="130.0" text="ISBN" />
-                              <TableColumn minWidth="0.0" prefWidth="90.0" text="Date" />
+                              <TableColumn fx:id="DateColumn" minWidth="0.0" prefWidth="90.0" text="Date Due" />
                           </columns>
                         </TableView>
                      </children>

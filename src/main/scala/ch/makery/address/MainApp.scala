@@ -54,8 +54,8 @@ object MainApp extends JFXApp {
     stage.setResizable(false)
   }
 
-  def showUserPage(): Unit = {
-    stage.scene().root = loadFXML("view/User.fxml")
+  def showDashBoard(): Unit = {
+    stage.scene().root = loadFXML("view/DashBoard.fxml")
     stage.centerOnScreen()
     stage.title = "User Page"
     stage.setResizable(false)
