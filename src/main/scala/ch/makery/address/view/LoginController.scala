@@ -6,15 +6,19 @@ import scalafx.scene.control.{PasswordField, TextField}
 import scalafx.stage.Stage
 import scalafxml.core.{FXMLLoader, NoDependencyResolver}
 import scalafxml.core.macros.sfxml
-import javafx.fxml.FXML
+
 import scalafx.scene.input.MouseEvent
 
 @sfxml
-class LoginController (private val password1: String = "sup3rStR0ngp4ssW0rD",
-                       private val userID1: String = "User"){
+class LoginController (
+                       private val user_txt: TextField,
+                       var pass_text: PasswordField
+                      ){
+  private val password1: String = "sup3rStR0ngp4ssW0rD"
+  private val userID1: String = "User"
 
-  //var user_txt: TextField = _
-  //var pass_text: PasswordField = _
+  user_txt.text = userID1
+  pass_text.text = password1
 
   def loginBtnOnClick(event: ActionEvent): Unit = {
     MainApp.showUserPage()

@@ -39,28 +39,33 @@ object MainApp extends JFXApp {
       root = loadFXML("view/Login.fxml")
     }
   }
+  stage.setResizable(false)
 
   def showBorrowedBooks(): Unit = {
     stage.scene().root = loadFXML("view/BooksBorrowed.fxml")
     stage.centerOnScreen()
     stage.title = "Books Borrowed"
+    stage.setResizable(false)
   }
   def showDueBooks(): Unit = {
     stage.scene().root = loadFXML("view/BooksDue.fxml")
     stage.centerOnScreen()
     stage.title = "Books Due"
+    stage.setResizable(false)
   }
 
   def showUserPage(): Unit = {
     stage.scene().root = loadFXML("view/User.fxml")
     stage.centerOnScreen()
     stage.title = "User Page"
+    stage.setResizable(false)
   }
 
   def logOut(): Unit ={
     stage.scene().root = loadFXML("view/Login.fxml")
     stage.centerOnScreen()
     stage.title = "LogIn Page"
+    stage.setResizable(false)
   }
 
   private def loadFXML(resource: String): AnchorPane = {
