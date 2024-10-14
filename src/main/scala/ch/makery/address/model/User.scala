@@ -9,5 +9,5 @@ class User(firstNameS: String, lastNameS: String, userIdS: String, postalCodeS:O
   var PostalCode = ObjectProperty[Int](postalCodeS.value)
   var StreetName = new StringProperty(streetNameS)
   var City = new StringProperty(CityS)
-  var BirthDate = ObjectProperty[LocalDate](LocalDate.of(1999, 2, 21))
+  var BirthDate = ObjectProperty[LocalDate](LocalDate.of(birthDate.getYear, birthDate.getMonth, birthDate.getDayOfMonth))
 }
